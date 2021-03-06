@@ -2,7 +2,6 @@ package TestCases;
 
 import java.awt.AWTException;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;

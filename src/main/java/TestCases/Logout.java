@@ -9,23 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import PageFactoryandTestdata.HelpingFunction;
 import PageFactoryandTestdata.Locatiors;
-import PageFactoryandTestdata.TestData;
 
 
-public class Login extends HelpingFunction  {
+public class Logout extends HelpingFunction  {
 
-				public static  void login() throws InterruptedException, AWTException, IOException{
+				public static  void logout() throws InterruptedException, AWTException, IOException{
 						
 						
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
-					driver.get(envirnment);
-					Input("Please Enter UserName", GetData.UserName, TestData.USER);
-					Input("Please Enter Password", GetData.Password, TestData.PASS);
-					Thread.sleep(3000);
 
-					Click("Please click login button",GetData.LoginButton);
-					Thread.sleep(5000);
+					Click("Please click Logout button",GetData.Logout);
+					Thread.sleep(10000);
 				//	Assert.assertTrue(GetData.Publishers.isDisplayed());
 
 					
