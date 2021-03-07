@@ -46,7 +46,7 @@ public class SignUp extends HelpingFunction  {
 
 				      
 					
-				      String email = "test"+nxt+"@test.com";
+				       email = "test"+nxt+"@test.com";
 					
 					
 					
@@ -142,6 +142,11 @@ public class SignUp extends HelpingFunction  {
 					
 					Select nextStep = new Select(GetData.NextStep);
 					nextStep.selectByIndex(1);
+					
+					Click("Please click on Terms & Conditions link",GetData.Terms);
+					Thread.sleep(3000);
+					Click("Please click on Close button",GetData.Close);
+					
 					Click("Please click on Complete Regiestration button",GetData.CompleteRegistration);
 
 					

@@ -38,6 +38,22 @@ public class Mail extends HelpingFunction  {
 					
 					Input("Please Enter Subject", GetData.Subject, TestData.SUBJECT);
 					Input("Please Enter Content", GetData.Content, TestData.CONTENT);
+					
+					Click("Please click Select Files button",GetData.SelectFiles);
+					Thread.sleep(2000);
+
+					String Projectpath=System.getProperty("user.dir");
+	    		    System.out.println(Projectpath);
+	    		    ProcessBuilder pb = new ProcessBuilder(Projectpath+"/Img/upload.exe", Projectpath+"\\Img\\logo.jpg");
+	    		    Thread.sleep(5000);
+	    		    pb.start();
+				    
+				    Thread.sleep(2000);
+				    driver.switchTo().defaultContent();
+				    Thread.sleep(2000);
+					
+				    driver.switchTo().alert().accept();
+				    
 					Click("Please click Send Message button",GetData.SendMessage);
 					
 					JavascriptExecutor scroll3 = (JavascriptExecutor) driver;

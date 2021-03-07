@@ -20,6 +20,10 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//a[contains(@href, '/offers')]") public WebElement Offers;
 	@FindBy(xpath="//a[contains(@href, '/logout')]") public WebElement Logout;
 	
+	//FORGOT PASSWORD
+	@FindBy(xpath="//a[contains(@title, 'Forgot password?')]") public WebElement ForgotPassword;
+	@FindBy(xpath="//input[contains(@id, 'forgot_email')]") public WebElement ForgotEmail;
+	@FindBy(xpath="//input[contains(@id, 'Submit_Forgot')]") public WebElement ForgotButton;
 	
 	@FindBy(xpath="//button[contains(@data-test, 'inspect')]") public List<WebElement> ViewBudget;
 
@@ -28,14 +32,55 @@ public class Locatiors extends ExecutionFile{
 	
 	//CHAT
 	@FindBy(xpath="//a[contains(@href, '/message/chat/messages')]") public WebElement ChatButton;
+	@FindBy(xpath="//span[contains(text(), 'admin')]") public WebElement admin;
+	@FindBy(xpath="//a[contains(text(),'Chat Conversations')]") public List<WebElement> ChatConversations2;
+	@FindBy(xpath="//div[contains(@class, 'col-6 text-center')]") public List<WebElement> MailConversations;
+	@FindBy(xpath="//div[contains(text(), 'No chat conversations found.')]") public WebElement NoChatText;
+	@FindBy(xpath="//b[contains(text(),'Set Favourite')]") public WebElement SetFavourite;
+	@FindBy(xpath="//div[contains(text(), 'Your favourite added successfully.')]") public WebElement SetFavouriteText;
+	@FindBy(xpath="//div[contains(text(), 'Already a favourite of yours.')]") public WebElement AlreadyFavourite;
+	@FindBy(xpath="//a[contains(@title, 'Show your interest')]") public WebElement ShowInterest;
+	@FindBy(xpath="//div[contains(text(), 'You have shown interest in this member before.')]") public WebElement AlreadyShowedInterest;
+	@FindBy(xpath="//div[contains(text(), 'Your interest sent successfully.')]") public WebElement ShowInterestSuccess;
+	
+	//BLOCK && REPORT PROFILE
+	@FindBy(xpath="//img[contains(@class, 'lozad')]") public List<WebElement> BlockIcon;
+	@FindBy(xpath="//a[contains(text(), 'Block Profile')]") public WebElement BlockProfile;
+	@FindBy(xpath="//div[contains(text(), 'Your blocked profile added successfully.')]") public WebElement BlockProfileText;
+	@FindBy(xpath="//div[contains(text(), 'Already a blocked profile of yours.')]") public WebElement AlreadyBlockProfileText;
+	@FindBy(xpath="//a[contains(@class, 'dropdown-item small')]") public List<WebElement> ReportProfile;
+	@FindBy(xpath="//textarea[contains(@id,'comment')]") public WebElement Reason;
+	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement ReportUserProfile;
+	
+	
+	//UNBLOCK PROFILE
+	@FindBy(xpath="//a[contains(text(),'My Blocked')]") public List<WebElement> MyBlocked2;
+	@FindBy(xpath="//b[contains(text(),'Remove')]") public WebElement Remove;
+	@FindBy(xpath="//a[contains(text(),'My Favourites')]") public List<WebElement> MyFavourites2;
+	@FindBy(xpath="//button[contains(@id,'Delete')]") public WebElement Delete;
 	
 	@FindBy(xpath="//a[contains(text(), 'Messages')]") public WebElement messages;
 	
 	@FindBy(xpath="//a[contains(text(), 'Profile')]") public WebElement profile;
 	@FindBy(xpath="//a[contains(text(), 'Edit Profile')]") public WebElement EditProfile;
+	@FindBy(xpath="//a[contains(text(), 'Edit Videos')]") public WebElement EditVideos;
+	
 	
 	@FindBy(xpath="//input[contains(@id,'headline')]") public WebElement ProfileTitle;
 	@FindBy(xpath="//textarea[contains(@id,'essay')]") public WebElement ProfileProposal;
+	
+	//EDIT PHOTOS
+	@FindBy(xpath="//a[contains(text(), 'Edit Photos')]") public WebElement EditPhotos;
+	@FindBy(xpath="//input[contains(@id, 'photo_name')]") public WebElement PhotoName;
+	@FindBy(xpath="//textarea[contains(@id, 'description')]") public WebElement Description;
+	
+	//PROFILE EDIT VIDEO
+	@FindBy(xpath="//input[contains(@id, 'audio_url')]") public WebElement VideoURL;
+	@FindBy(xpath="//input[contains(@id, 'audio_name')]") public WebElement VideoTitle;
+	@FindBy(xpath="//textarea[contains(@id, 'description')]") public WebElement VideoDescription;
+	@FindBy(xpath="//input[contains(@id, 'Submit')]") public WebElement SaveVideo;
+	@FindBy(xpath="//button[contains(@id, 'Delete')]") public WebElement DeleteVideo;
+	@FindBy(xpath="//div[contains(text(), 'Successfully Updated.')]") public WebElement SuccessfullyUpdated;
 	
 	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement SubmitProposal;
 	
@@ -100,10 +145,13 @@ public class Locatiors extends ExecutionFile{
 	//RECENT MEMBERS
 	@FindBy(xpath="//a[contains(text(),'Recent')]") public WebElement Recent;
 	@FindBy(xpath="//h3[contains(text(), 'Recent Members')]") public WebElement RecentMembers;
+	@FindBy(xpath="//b[contains(text(),'Add Favourite')]") public WebElement AddFavourite;
+	@FindBy(xpath="//div[contains(text(),'Your favourite added successfully.')]") public WebElement SuccessAddFavourite;
 	
 	//VERIFIED MEMBERS
 	@FindBy(xpath="//a[contains(text(),'Verified')]") public WebElement Verified;
 	@FindBy(xpath="//h3[contains(text(), 'Verified Members')]") public WebElement VerifiedMembers;
+	@FindBy(xpath="//b[contains(text(), 'Send Mail')]") public WebElement SendMail;
 	
 	//NEWEST MEMBERS
 	@FindBy(xpath="//a[contains(text(),'Newest')]") public WebElement Newest;
@@ -206,6 +254,7 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//button[contains(text(),'Reply Mail')]") public WebElement ReplyMail;
 	@FindBy(xpath="//input[contains(@id,'subject')]") public WebElement Subject;
 	@FindBy(xpath="//textarea[contains(@id,'text')]") public WebElement Content;
+	@FindBy(xpath="//input[contains(@multiple, 'multiple')]") public WebElement SelectFiles;
 	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement SendMessage;
 	@FindBy(xpath="//div[contains(text(),'Successfully Sent.')]") public WebElement SentMessageTitle;
 	
@@ -242,6 +291,8 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//select[contains(@id,'diet')]") public WebElement Childern;
 	@FindBy(xpath="//select[contains(@id,'humor')]") public WebElement Personality;
 	@FindBy(xpath="//select[contains(@id,'first_date')]") public WebElement NextStep;
+	@FindBy(xpath="//a[contains(@href, '/content/terms')]") public WebElement Terms;
+	@FindBy(xpath="//button[contains(text(),'Close')]") public WebElement Close;
 	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement CompleteRegistration;
 
 }

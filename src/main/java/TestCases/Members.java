@@ -14,6 +14,7 @@ import org.testng.Assert;
 
 import PageFactoryandTestdata.HelpingFunction;
 import PageFactoryandTestdata.Locatiors;
+import PageFactoryandTestdata.TestData;
 
 
 public class Members extends HelpingFunction  {
@@ -53,9 +54,14 @@ public class Members extends HelpingFunction  {
 					driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 					
 					JavascriptExecutor js = (JavascriptExecutor) driver;
-					js.executeScript("window.scrollBy(0,300)");
+					js.executeScript("window.scrollBy(0,400)");
 					
 					Assert.assertTrue(GetData.RecentMembers.isDisplayed());
+					
+					Click("Please click Recent button",GetData.AddFavourite);
+					
+					Assert.assertTrue(GetData.SuccessAddFavourite.isDisplayed());
+					
 				}
 				
 				public static  void verifiedMembers() throws InterruptedException, AWTException, IOException{
@@ -72,9 +78,17 @@ public class Members extends HelpingFunction  {
 					driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 					
 					JavascriptExecutor js = (JavascriptExecutor) driver;
-					js.executeScript("window.scrollBy(0,200)");
+					js.executeScript("window.scrollBy(0,400)");
 					
 					Assert.assertTrue(GetData.VerifiedMembers.isDisplayed());
+					Click("Please click Send Mail button",GetData.SendMail);
+					
+					js.executeScript("window.scrollBy(0,700)");
+					Input("Please Enter Content", GetData.Content, TestData.CONTENT);
+					Click("Please click Send Message button",GetData.SendMessage);
+					
+					Assert.assertTrue(GetData.SentMessageTitle.isDisplayed());
+
 				}
 				
 				public static  void newestMembers() throws InterruptedException, AWTException, IOException{
