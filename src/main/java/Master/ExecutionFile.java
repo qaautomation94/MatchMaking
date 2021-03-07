@@ -53,7 +53,7 @@ public class ExecutionFile {
 			public static void SystmProperties() throws InterruptedException, AWTException, IOException{
 
 
-				
+				//
 			Systemroperties.Property();
 	
 		}
