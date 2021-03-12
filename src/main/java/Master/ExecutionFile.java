@@ -4,7 +4,10 @@ import static TestCases.StartBrowser.StartupBrowser;
 import java.awt.AWTException;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -65,7 +68,7 @@ public class ExecutionFile {
 
 					StartupBrowser(Suite);
 			} 
-/*	
+
 	@Test(priority=1)
 	public   void SignUp() throws InterruptedException, AWTException, IOException{
 	 	SignUp.signUp();		
@@ -80,217 +83,230 @@ public class ExecutionFile {
 	public   void ForgotPassword() throws InterruptedException, AWTException, IOException{
 	 	Login.forgotPassword();		
  	}
-*/	
+	
 	
 	@Test(priority=4)
 	 		public   void LoginApp() throws InterruptedException, AWTException, IOException{
 				 	Login.login();		
 			 	}
-	
+
 	@Test(priority=5)
+	public   void Delete_User() throws InterruptedException, AWTException, IOException{
+	 	Login.DeleteUser();
+	
+	 	
+ 	}
+	@Test(priority=6)
+		public   void ALoginApp() throws InterruptedException, AWTException, IOException{
+		 	Login.loginold();		
+	 	}
+
+	
+	
+	@Test(priority=7)
 		public   void Profile() throws InterruptedException, AWTException, IOException{
 		 	Profile.editProfile();
 	 	}
 	 	
-	 @Test(priority=6)
+	 @Test(priority=8)
 		public   void EditVideos() throws InterruptedException, AWTException, IOException{
 		 	Profile.editVideos();
 	 	}	
 	
-	@Test(priority=7)
+	@Test(priority=9)
 	public   void EditAccount() throws InterruptedException, AWTException, IOException{
 	 	Profile.editAccount();
  	}
 
-	@Test(priority=8)
+	@Test(priority=10)
 	public   void EditPhotos() throws InterruptedException, AWTException, IOException{
 	 	Profile.editPhotos();
  	}
 
-	@Test(priority=9)
+	@Test(priority=11)
 	public   void EditPersonal() throws InterruptedException, AWTException, IOException{
 	 	Profile.editPersonal();
  	}
 		
-	@Test(priority=10)
+	@Test(priority=12)
 	public   void EditPartner() throws InterruptedException, AWTException, IOException{
 	 	Profile.editPartner();
 	}
 	
-	@Test(priority=11)
+	@Test(priority=13)
 	public   void EditSettings() throws InterruptedException, AWTException, IOException{
 	 	Profile.editSettings();
 	}
 	
-	@Test(priority=12)
+	@Test(priority=14)
 	public   void EditVerification() throws InterruptedException, AWTException, IOException{
 	 	Profile.editVerification();
 	}
 	
-	@Test(priority=13)
+	@Test(priority=15)
 	public   void Chat() throws InterruptedException, AWTException, IOException{
 	 	Chat.chat();
  	}
 
-	@Test(priority=14)
+	@Test(priority=16)
 	public   void BasicSearch() throws InterruptedException, AWTException, IOException{
 	 	Search.basicSearch();
 	}
 	
-	@Test(priority=15)
+	@Test(priority=17)
 	public   void AdvanceSearch() throws InterruptedException, AWTException, IOException{
 	 	Search.advanceSearch();
 	}
 	
-	@Test(priority=16)
+	@Test(priority=18)
 	public   void PhotoGallery() throws InterruptedException, AWTException, IOException{
 	 	Gallery.photoGallery();
 	}
 	
-	@Test(priority=17)
+	@Test(priority=19)
 	public   void VideoGallery() throws InterruptedException, AWTException, IOException{
 	 	Gallery.videoGallery();
 	}
 	
 	
-	@Test(priority=18)
+	@Test(priority=20)
 	public   void OnlineMembers() throws InterruptedException, AWTException, IOException{
 	 	Members.onlineMembers();
 	}
 	
-	@Test(priority=19)
+	@Test(priority=21)
 	public   void RecentMembers() throws InterruptedException, AWTException, IOException{
 	 	Members.recentMembers();
 	}
 	
-	@Test(priority=20)
+	@Test(priority=22)
 	public   void VerifiedMembers() throws InterruptedException, AWTException, IOException{
 	 	Members.verifiedMembers();
 	}
 	
-	@Test(priority=21)
+	@Test(priority=23)
 	public   void NewestMembers() throws InterruptedException, AWTException, IOException{
 	 	Members.newestMembers();
 	}
 	
-	@Test(priority=22)
+	@Test(priority=24)
 	public   void FeaturedMembers() throws InterruptedException, AWTException, IOException{
 	 	Members.featuredMembers();
 	}
 			 
-	@Test(priority=23)
+	@Test(priority=25)
 	public   void MyMatchProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.myMatchProspects();
 	}
 	
-	@Test(priority=24)
+	@Test(priority=26)
 	public   void mMFavouritesProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.myFavouritesProspects();
 	}
 		
-	@Test(priority=25)
+	@Test(priority=27)
 	public   void FavoursMeProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.favoursMeProspects();
 	}
 	
-	@Test(priority=26)
+	@Test(priority=28)
 	public   void MyViewedProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.myViewedProspects();
 	}
 		
-	@Test(priority=27)
+	@Test(priority=29)
 	public   void ViewedMeProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.viewedMeProspects();
 	}
 		
-	@Test(priority=28)
+	@Test(priority=30)
 	public   void MyBlockedProspects() throws InterruptedException, AWTException, IOException{
 	 	Prospects.blockedProspects();
 	}
 		
-	@Test(priority=29)
+	@Test(priority=31)
 	public   void SentMailMessages() throws InterruptedException, AWTException, IOException{
 	 	Messages.sentMailMessages();
 	}
 		
-	@Test(priority=30)
+	@Test(priority=32)
 	public   void ReceivedInterestsMessages() throws InterruptedException, AWTException, IOException{
 	 	Messages.receivedInterestsMessages();
 	}
 		
-	@Test(priority=31)
+	@Test(priority=33)
 	public   void SentInterestMessages() throws InterruptedException, AWTException, IOException{
 	 	Messages.sentInterestMessages();
 	}
 	
-	@Test(priority=32)
+	@Test(priority=34)
 	public   void ChatConversationsMessages() throws InterruptedException, AWTException, IOException{
 	 	Messages.chatConversationsMessages();
 	}
 	
-	@Test(priority=33)
+	@Test(priority=35)
 	public   void OnlineSecuritySupport() throws InterruptedException, AWTException, IOException{
 	 	Support.onlineSecuritySupport();
 	}
 	
-	@Test(priority=34)
+	@Test(priority=36)
 	public   void RelationshipAdviceSupport() throws InterruptedException, AWTException, IOException{
 	 	Support.relationshipAdviceSupport();
 	}
 	
-	@Test(priority=35)
+	@Test(priority=37)
 	public   void HelpPagesSupport() throws InterruptedException, AWTException, IOException{
 		Support.helpPagesSupport();
 	}
 	
-	@Test(priority=36)
+	@Test(priority=38)
 	public   void TestimonialsSupport() throws InterruptedException, AWTException, IOException{
 		Support.testimonialsSupport();
 	}
 	
-	@Test(priority=37)
+	@Test(priority=39)
 	public   void AboutUsSupport() throws InterruptedException, AWTException, IOException{
 		Support.aboutUsSupport();
 		
 	}
 	
-	@Test(priority=38)
+	@Test(priority=40)
 	public   void ContactUsSupport() throws InterruptedException, AWTException, IOException{
 		Support.contactUsSupport();
 		
 	}
 	
-	@Test(priority=39)
+	@Test(priority=41)
 	public   void Viewed() throws InterruptedException, AWTException, IOException{
 		Viewed.viewed();
 	}
 	
-	@Test(priority=40)
+	@Test(priority=42)
 	public   void Recent() throws InterruptedException, AWTException, IOException{
 		Recent.recent();
 	}
 	
-	@Test(priority=41)
+	@Test(priority=43)
 	public   void Online() throws InterruptedException, AWTException, IOException{
 		Online.online();
 	}
 	
-	@Test(priority=42)
+	@Test(priority=44)
 	public   void Favours() throws InterruptedException, AWTException, IOException{
 		Favours.favours();
 	}
 	
-	@Test(priority=43)
+	@Test(priority=45)
 	public   void Interests() throws InterruptedException, AWTException, IOException{
 		Interests.interests();
 	}
 
-	@Test(priority=44)
+	@Test(priority=46)
 	public   void Mail() throws InterruptedException, AWTException, IOException{
 		Mail.mail();
 	}
 	
-			
+	
 			@AfterMethod
 			public void getResult(ITestResult result) throws IOException, InterruptedException{
 				 //System.out.println(result.getStatus());

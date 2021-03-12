@@ -5,55 +5,12 @@
     <classes>
       <class name="Master.ExecutionFile">
         <methods>
-          <include name="RelationshipAdviceSupport"/>
-          <include name="endReport"/>
-          <include name="Mail"/>
-          <include name="Interests"/>
-          <include name="Favours"/>
-          <include name="PhotoGallery"/>
-          <include name="EditPersonal"/>
-          <include name="SentMailMessages"/>
-          <include name="ViewedMeProspects"/>
-          <include name="VideoGallery"/>
-          <include name="BasicSearch"/>
-          <include name="Viewed"/>
-          <include name="TestimonialsSupport"/>
-          <include name="ForgotPassword"/>
-          <include name="RecentMembers"/>
-          <include name="CloseBrowser"/>
-          <include name="AboutUsSupport"/>
-          <include name="AdvanceSearch"/>
-          <include name="MyBlockedProspects"/>
-          <include name="mMFavouritesProspects"/>
-          <include name="ContactUsSupport"/>
-          <include name="ChatConversationsMessages"/>
-          <include name="OnlineMembers"/>
-          <include name="SignUp"/>
-          <include name="MyMatchProspects"/>
-          <include name="EditVerification"/>
-          <include name="Profile"/>
-          <include name="EditVideos"/>
-          <include name="MyViewedProspects"/>
-          <include name="FavoursMeProspects"/>
-          <include name="Logout"/>
-          <include name="Recent"/>
-          <include name="EditSettings"/>
-          <include name="Chat"/>
-          <include name="EditPartner"/>
-          <include name="EditAccount"/>
-          <include name="SentInterestMessages"/>
-          <include name="HelpPagesSupport"/>
-          <include name="SystmProperties"/>
-          <include name="EditPhotos"/>
-          <include name="NewestMembers"/>
-          <include name="OnlineSecuritySupport"/>
-          <include name="ReceivedInterestsMessages"/>
           <include name="getResult"/>
-          <include name="LoginApp"/>
-          <include name="VerifiedMembers"/>
-          <include name="FeaturedMembers"/>
-          <include name="Online"/>
+          <include name="endReport"/>
+          <include name="SystmProperties"/>
+          <include name="Chat"/>
           <include name="Startup"/>
+          <include name="CloseBrowser"/>
         </methods>
       </class> <!-- Master.ExecutionFile -->
     </classes>

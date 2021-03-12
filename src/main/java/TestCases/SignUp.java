@@ -42,13 +42,14 @@ public class SignUp extends HelpingFunction  {
 					Input("Please Enter UserName", GetData.SignUpUserName, user);
 					Input("Please Create Password", GetData.CreatePassword, TestData.CREATEPASSWORD);
 //					int min=1;
-//					int max=100000000;
+//					int max=1000;
 //				      double random_double = Math.random() * (max - min + 1) + min; 
 
 				      
 					
-				       email = "eranaka.indu@gmail.com";
-					
+				//       email = "eranaka.indu@gmail.com";
+				       email = "test"+nxt+"@gmail.com";
+
 					
 					
 					Input("Please Enter Email", GetData.Email, email);

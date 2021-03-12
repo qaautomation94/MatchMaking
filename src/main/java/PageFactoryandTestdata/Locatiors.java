@@ -108,6 +108,12 @@ public class Locatiors extends ExecutionFile{
 	
 	//PROFILE EDIT SETTINGS
 	@FindBy(xpath="//a[contains(text(), 'Edit Settings')]") public WebElement EditSettings;
+	
+	@FindBy(xpath="//*[contains(text(), 'Account Delete')]") public WebElement DeleteUser;
+	
+	@FindBy(xpath="//*[contains(@value, 'Delete Profile')]") public WebElement DeleteProfile;
+
+
 	@FindBy(xpath="//label[contains(@class,'custom-control-label')]") public WebElement EmailNotification;
 	@FindBy(xpath="//input[contains(@id,'alerts')]") public WebElement UpdatePreferences;
 	
