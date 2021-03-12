@@ -86,9 +86,15 @@ public class Locatiors extends ExecutionFile{
 	
 	@FindBy(xpath="//div[contains(text(), 'Successfully Updated.')]") public WebElement SuccessMessage;
 	
+	//PROFILE EDIT ACCOUNt
 	@FindBy(xpath="//a[contains(text(), 'Edit Account')]") public WebElement EditAccount;
 	@FindBy(xpath="//select[contains(@id,'day')]") public WebElement ChangeDOB;
 	@FindBy(xpath="//button[contains(@type,'submit')]") public WebElement AccountDetails;
+	
+	@FindBy(xpath="//a[contains(text(),'Change Password')]") public WebElement ChangePassword;
+	@FindBy(xpath="//input[contains(@id, 'npassword')]") public WebElement NewPassword;
+	@FindBy(xpath="//input[contains(@id, 'cpassword')]") public WebElement ConfirmPassword;
+	@FindBy(xpath="//div[contains(text(), 'Successfully Updated.')]") public WebElement ConfirmUpdated;
 	
 	@FindBy(xpath="//a[contains(text(), 'Edit Personal')]") public WebElement EditPersonal;
 	
@@ -107,9 +113,10 @@ public class Locatiors extends ExecutionFile{
 	
 	//PROFILE EDIT VERIFICATION
 	@FindBy(xpath="//a[contains(text(), 'Edit Verification')]") public WebElement EditVerification;
-	@FindBy(xpath="//input[contains(@id,'real_name')]") public WebElement RealName;
+	@FindBy(xpath="//input[contains(@id,'real_name')]") public List<WebElement> RealName;
 	@FindBy(xpath="//input[contains(@name,'mobile')]") public WebElement MobileNumber;
 	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement VerifyAccount;
+	@FindBy(xpath="//input[contains(@id, 'activation_code')]") public WebElement VerificationCode;
 	
 	//BASIC SEARCH
 	@FindBy(xpath="//a[contains(text(), 'Search')]") public WebElement Search;
@@ -146,7 +153,6 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//a[contains(text(),'Recent')]") public WebElement Recent;
 	@FindBy(xpath="//h3[contains(text(), 'Recent Members')]") public WebElement RecentMembers;
 	@FindBy(xpath="//b[contains(text(),'Add Favourite')]") public WebElement AddFavourite;
-	@FindBy(xpath="//div[contains(text(),'Your favourite added successfully.')]") public WebElement SuccessAddFavourite;
 	
 	//VERIFIED MEMBERS
 	@FindBy(xpath="//a[contains(text(),'Verified')]") public WebElement Verified;

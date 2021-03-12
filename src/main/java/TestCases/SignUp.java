@@ -5,6 +5,7 @@ package TestCases;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
@@ -46,7 +47,7 @@ public class SignUp extends HelpingFunction  {
 
 				      
 					
-				       email = "test"+nxt+"@test.com";
+				       email = "eranaka.indu@gmail.com";
 					
 					
 					

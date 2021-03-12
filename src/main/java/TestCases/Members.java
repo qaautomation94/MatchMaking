@@ -12,6 +12,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.model.Log;
+
 import PageFactoryandTestdata.HelpingFunction;
 import PageFactoryandTestdata.Locatiors;
 import PageFactoryandTestdata.TestData;
@@ -59,8 +61,6 @@ public class Members extends HelpingFunction  {
 					Assert.assertTrue(GetData.RecentMembers.isDisplayed());
 					
 					Click("Please click Recent button",GetData.AddFavourite);
-					
-					Assert.assertTrue(GetData.SuccessAddFavourite.isDisplayed());
 					
 				}
 				

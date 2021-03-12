@@ -4,6 +4,7 @@ package TestCases;
 
 import java.awt.AWTException;
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -133,9 +134,16 @@ public class Profile extends HelpingFunction  {
 					Select day = new Select(GetData.ChangeDOB);
 					day.selectByIndex(5);
 					
+					js.executeScript("window.scrollBy(0,500)");
+					Click("Please click on Change Password button",GetData.ChangePassword);
+					
+					Input("Please Enter Current Password", GetData.Password, TestData.PASS);
+					Input("Please Enter New Password", GetData.NewPassword, TestData.PASS);
+					Input("Please Enter Confirm Password", GetData.ConfirmPassword, TestData.PASS);
 					
 					Click("Please click on Update Account Details button",GetData.AccountDetails);
 					
+					Assert.assertTrue(GetData.ConfirmUpdated.isDisplayed());
 					
 				}
 				
@@ -228,10 +236,19 @@ public class Profile extends HelpingFunction  {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("window.scrollBy(0,300)");
 					
-					Input("Please Enter Real Full Name", GetData.RealName, TestData.REALNAME);
-					Input("Please Enter Mobile Number", GetData.MobileNumber, TestData.MOBILENUMBER);
-					Click("Please click on Verify My Account button",GetData.VerifyAccount);
+					List<WebElement> li=GetData.RealName;
+					
+					//li.get(0).sendKeys(TestData.REALNAME);
+					if(li.size()==1) {
+						Input("Please Enter Real Full Name", li.get(0), TestData.REALNAME);
+						Input("Please Enter Mobile Number", GetData.MobileNumber, TestData.MOBILENUMBER);
+						Click("Please click on Verify My Account button",GetData.VerifyAccount);
 
+					}
+					else {
+						Input("Please Enter Verification code", GetData.VerificationCode, TestData.VERIFICATIONCODE);
+
+					}
 				}			
 }
 

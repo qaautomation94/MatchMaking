@@ -4,10 +4,14 @@ package TestCases;
 
 import java.awt.AWTException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import PageFactoryandTestdata.HelpingFunction;
@@ -48,11 +52,25 @@ public class Mail extends HelpingFunction  {
 	    		    Thread.sleep(5000);
 	    		    pb.start();
 				    
+	    		    WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
+				 	wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+									     	try{
+			     		wait.until(ExpectedConditions.alertIsPresent());
+			     		 Alert alert = driver.switchTo().alert();		
+			     		 alert.accept();
+			     	}
+			     	catch (Exception e) {
+			     	
+			         }
+
+
+
+
 				    Thread.sleep(2000);
-				    driver.switchTo().defaultContent();
+				//    driver.switchTo().defaultContent();
 				    Thread.sleep(2000);
 					
-				    driver.switchTo().alert().accept();
+				//    driver.switchTo().alert().accept();
 				    
 					Click("Please click Send Message button",GetData.SendMessage);
 					

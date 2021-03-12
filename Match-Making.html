@@ -33,11 +33,12 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>SWAARM Report</span>
+		<span class='report-name'>Match-Making</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -46,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 1, 2021 01:27:12 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 9, 2021 12:32:32 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +124,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>39</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='97.561%'><span class='strong'>40</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.439%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +139,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>39</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95.238%'><span class='strong'>40</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.762%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -158,14 +160,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>LoginApp</span>
-						<span class='test-time'>Mar 1, 2021 01:27:19 PM</span>
+						<span class='test-time'>Mar 9, 2021 12:32:41 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:27:19 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:27:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 28s+563ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:32:41 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:33:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+550ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,7 +181,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:48 PM</td>
+					<td class='timestamp'>12:33:00 PM</td>
 					<td class='step-details'><span class='label white-text green'>LoginApp Test Case is Passed</span></td>
 				</tr>
 			</tbody>
@@ -192,14 +194,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Profile</span>
-						<span class='test-time'>Mar 1, 2021 01:27:49 PM</span>
+						<span class='test-time'>Mar 9, 2021 12:33:02 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:27:49 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:28:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+30ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:33:02 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:33:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+934ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -213,7 +215,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:28:08 PM</td>
+					<td class='timestamp'>12:33:20 PM</td>
 					<td class='step-details'><span class='label white-text green'>Profile Test Case is Passed</span></td>
 				</tr>
 			</tbody>
@@ -225,15 +227,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>EditAccount</span>
-						<span class='test-time'>Mar 1, 2021 01:28:09 PM</span>
+						<span class='test-name'>EditVideos</span>
+						<span class='test-time'>Mar 9, 2021 12:33:21 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:28:09 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:28:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+126ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:33:21 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:33:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+778ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -247,8 +249,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:28:26 PM</td>
-					<td class='step-details'><span class='label white-text green'>EditAccount Test Case is Passed</span></td>
+					<td class='timestamp'>12:33:32 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditVideos Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -259,15 +261,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>EditPersonal</span>
-						<span class='test-time'>Mar 1, 2021 01:28:26 PM</span>
+						<span class='test-name'>EditAccount</span>
+						<span class='test-time'>Mar 9, 2021 12:33:33 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:28:26 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:28:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+212ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:33:33 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:33:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+555ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -281,8 +283,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:28:39 PM</td>
-					<td class='step-details'><span class='label white-text green'>EditPersonal Test Case is Passed</span></td>
+					<td class='timestamp'>12:33:51 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditAccount Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -293,15 +295,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>EditPartner</span>
-						<span class='test-time'>Mar 1, 2021 01:28:40 PM</span>
+						<span class='test-name'>EditPhotos</span>
+						<span class='test-time'>Mar 9, 2021 12:33:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:28:40 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:28:53 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+887ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:33:52 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:34:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+511ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -315,8 +317,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:28:53 PM</td>
-					<td class='step-details'><span class='label white-text green'>EditPartner Test Case is Passed</span></td>
+					<td class='timestamp'>12:34:17 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditPhotos Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -327,15 +329,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>EditSettings</span>
-						<span class='test-time'>Mar 1, 2021 01:28:54 PM</span>
+						<span class='test-name'>EditPersonal</span>
+						<span class='test-time'>Mar 9, 2021 12:34:18 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:28:54 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+804ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:34:18 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:34:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+667ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -349,8 +351,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:07 PM</td>
-					<td class='step-details'><span class='label white-text green'>EditSettings Test Case is Passed</span></td>
+					<td class='timestamp'>12:34:31 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditPersonal Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -361,15 +363,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>Chat</span>
-						<span class='test-time'>Mar 1, 2021 01:29:07 PM</span>
+						<span class='test-name'>EditPartner</span>
+						<span class='test-time'>Mar 9, 2021 12:34:32 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:07 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+67ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:34:32 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:34:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+163ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -383,8 +385,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:20 PM</td>
-					<td class='step-details'><span class='label white-text green'>Chat Test Case is Passed</span></td>
+					<td class='timestamp'>12:34:46 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditPartner Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -395,15 +397,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>BasicSearch</span>
-						<span class='test-time'>Mar 1, 2021 01:29:20 PM</span>
+						<span class='test-name'>EditSettings</span>
+						<span class='test-time'>Mar 9, 2021 12:34:46 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:20 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+440ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:34:46 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:34:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+661ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -417,8 +419,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:24 PM</td>
-					<td class='step-details'><span class='label white-text green'>BasicSearch Test Case is Passed</span></td>
+					<td class='timestamp'>12:34:59 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditSettings Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -429,15 +431,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
-						<span class='test-name'>AdvanceSearch</span>
-						<span class='test-time'>Mar 1, 2021 01:29:25 PM</span>
+						<span class='test-name'>EditVerification</span>
+						<span class='test-time'>Mar 9, 2021 12:34:59 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:25 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+283ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:34:59 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:35:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+84ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -451,8 +453,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:29 PM</td>
-					<td class='step-details'><span class='label white-text green'>AdvanceSearch Test Case is Passed</span></td>
+					<td class='timestamp'>12:35:42 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditVerification Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -461,17 +463,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
 					<div class='test-heading'>
-						<span class='test-name'>PhotoGallery</span>
-						<span class='test-time'>Mar 1, 2021 01:29:29 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Chat</span>
+						<span class='test-time'>Mar 9, 2021 12:35:42 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:29 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:32 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+593ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:35:42 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+730ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -483,10 +485,70 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:32 PM</td>
-					<td class='step-details'><span class='label white-text green'>PhotoGallery Test Case is Passed</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:36:30 PM</td>
+					<td class='step-details'><span class='label white-text red'>ChatTest Case is Failed due to Below Issue</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:36:30 PM</td>
+					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Your favourite added successfully.')]"}
+  (Session info: chrome=88.0.4324.190)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MACPK-WKS-0132', ip: '192.168.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUHAMM~1.IFT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a38d3957054fbd794f5bb68f5be2a81
+*** Element info: {Using=xpath, value=//div[contains(text(), 'Your favourite added successfully.')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at TestCases.Chat.chat(Chat.java:47)
+	at Master.ExecutionFile.Chat(ExecutionFile.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at Master.TestRunner.main(TestRunner.java:12)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -497,15 +559,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
-						<span class='test-name'>VideoGallery</span>
-						<span class='test-time'>Mar 1, 2021 01:29:32 PM</span>
+						<span class='test-name'>BasicSearch</span>
+						<span class='test-time'>Mar 9, 2021 12:36:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:32 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:33 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+97ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:31 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+537ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -519,8 +581,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:33 PM</td>
-					<td class='step-details'><span class='label white-text green'>VideoGallery Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:36 PM</td>
+					<td class='step-details'><span class='label white-text green'>BasicSearch Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -531,15 +593,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
-						<span class='test-name'>OnlineMembers</span>
-						<span class='test-time'>Mar 1, 2021 01:29:33 PM</span>
+						<span class='test-name'>AdvanceSearch</span>
+						<span class='test-time'>Mar 9, 2021 12:36:37 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:33 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+274ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:37 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+58ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -553,8 +615,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:35 PM</td>
-					<td class='step-details'><span class='label white-text green'>OnlineMembers Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:42 PM</td>
+					<td class='step-details'><span class='label white-text green'>AdvanceSearch Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -565,15 +627,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
-						<span class='test-name'>RecentMembers</span>
-						<span class='test-time'>Mar 1, 2021 01:29:35 PM</span>
+						<span class='test-name'>PhotoGallery</span>
+						<span class='test-time'>Mar 9, 2021 12:36:43 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:35 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+938ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:43 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+884ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -587,8 +649,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:37 PM</td>
-					<td class='step-details'><span class='label white-text green'>RecentMembers Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:47 PM</td>
+					<td class='step-details'><span class='label white-text green'>PhotoGallery Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -599,15 +661,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifiedMembers</span>
-						<span class='test-time'>Mar 1, 2021 01:29:37 PM</span>
+						<span class='test-name'>VideoGallery</span>
+						<span class='test-time'>Mar 9, 2021 12:36:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:37 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+669ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:47 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+944ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -621,8 +683,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:39 PM</td>
-					<td class='step-details'><span class='label white-text green'>VerifiedMembers Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:49 PM</td>
+					<td class='step-details'><span class='label white-text green'>VideoGallery Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -633,15 +695,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
-						<span class='test-name'>NewestMembers</span>
-						<span class='test-time'>Mar 1, 2021 01:29:39 PM</span>
+						<span class='test-name'>OnlineMembers</span>
+						<span class='test-time'>Mar 9, 2021 12:36:49 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:39 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:40 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+667ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:49 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+292ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -655,8 +717,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:40 PM</td>
-					<td class='step-details'><span class='label white-text green'>NewestMembers Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:51 PM</td>
+					<td class='step-details'><span class='label white-text green'>OnlineMembers Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -667,15 +729,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
-						<span class='test-name'>FeaturedMembers</span>
-						<span class='test-time'>Mar 1, 2021 01:29:41 PM</span>
+						<span class='test-name'>RecentMembers</span>
+						<span class='test-time'>Mar 9, 2021 12:36:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:41 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:43 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+848ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:52 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:36:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+478ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -689,8 +751,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:43 PM</td>
-					<td class='step-details'><span class='label white-text green'>FeaturedMembers Test Case is Passed</span></td>
+					<td class='timestamp'>12:36:55 PM</td>
+					<td class='step-details'><span class='label white-text green'>RecentMembers Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -701,15 +763,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
-						<span class='test-name'>MyMatchProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:43 PM</span>
+						<span class='test-name'>VerifiedMembers</span>
+						<span class='test-time'>Mar 9, 2021 12:36:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:43 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+800ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:36:56 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+477ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -723,8 +785,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:45 PM</td>
-					<td class='step-details'><span class='label white-text green'>MyMatchProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:02 PM</td>
+					<td class='step-details'><span class='label white-text green'>VerifiedMembers Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -735,15 +797,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
-						<span class='test-name'>mMFavouritesProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:45 PM</span>
+						<span class='test-name'>NewestMembers</span>
+						<span class='test-time'>Mar 9, 2021 12:37:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:45 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+395ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:03 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+744ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -757,8 +819,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:46 PM</td>
-					<td class='step-details'><span class='label white-text green'>mMFavouritesProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:05 PM</td>
+					<td class='step-details'><span class='label white-text green'>NewestMembers Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -769,15 +831,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
 					<div class='test-heading'>
-						<span class='test-name'>FavoursMeProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:46 PM</span>
+						<span class='test-name'>FeaturedMembers</span>
+						<span class='test-time'>Mar 9, 2021 12:37:06 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:46 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+255ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:06 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+678ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -791,8 +853,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:48 PM</td>
-					<td class='step-details'><span class='label white-text green'>FavoursMeProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:08 PM</td>
+					<td class='step-details'><span class='label white-text green'>FeaturedMembers Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -803,15 +865,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
 					<div class='test-heading'>
-						<span class='test-name'>MyViewedProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:48 PM</span>
+						<span class='test-name'>MyMatchProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:08 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:48 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+306ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:08 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+749ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -825,8 +887,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:49 PM</td>
-					<td class='step-details'><span class='label white-text green'>MyViewedProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:10 PM</td>
+					<td class='step-details'><span class='label white-text green'>MyMatchProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -837,15 +899,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
 					<div class='test-heading'>
-						<span class='test-name'>ViewedMeProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:49 PM</span>
+						<span class='test-name'>mMFavouritesProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:49 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+640ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:10 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+490ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -859,8 +921,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:51 PM</td>
-					<td class='step-details'><span class='label white-text green'>ViewedMeProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:13 PM</td>
+					<td class='step-details'><span class='label white-text green'>mMFavouritesProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -871,15 +933,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
 					<div class='test-heading'>
-						<span class='test-name'>MyBlockedProspects</span>
-						<span class='test-time'>Mar 1, 2021 01:29:51 PM</span>
+						<span class='test-name'>FavoursMeProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:51 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:53 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+331ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:13 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+644ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -893,8 +955,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:53 PM</td>
-					<td class='step-details'><span class='label white-text green'>MyBlockedProspects Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:15 PM</td>
+					<td class='step-details'><span class='label white-text green'>FavoursMeProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -905,15 +967,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
 					<div class='test-heading'>
-						<span class='test-name'>SentMailMessages</span>
-						<span class='test-time'>Mar 1, 2021 01:29:53 PM</span>
+						<span class='test-name'>MyViewedProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:53 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+828ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:15 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+777ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -927,8 +989,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:55 PM</td>
-					<td class='step-details'><span class='label white-text green'>SentMailMessages Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:19 PM</td>
+					<td class='step-details'><span class='label white-text green'>MyViewedProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -939,15 +1001,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
 					<div class='test-heading'>
-						<span class='test-name'>ReceivedInterestsMessages</span>
-						<span class='test-time'>Mar 1, 2021 01:29:55 PM</span>
+						<span class='test-name'>ViewedMeProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:19 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:55 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+307ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:19 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+657ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -961,8 +1023,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:56 PM</td>
-					<td class='step-details'><span class='label white-text green'>ReceivedInterestsMessages Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:21 PM</td>
+					<td class='step-details'><span class='label white-text green'>ViewedMeProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -973,15 +1035,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
 					<div class='test-heading'>
-						<span class='test-name'>SentInterestMessages</span>
-						<span class='test-time'>Mar 1, 2021 01:29:56 PM</span>
+						<span class='test-name'>MyBlockedProspects</span>
+						<span class='test-time'>Mar 9, 2021 12:37:21 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:56 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:29:58 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+149ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:21 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+589ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -995,8 +1057,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:29:58 PM</td>
-					<td class='step-details'><span class='label white-text green'>SentInterestMessages Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:22 PM</td>
+					<td class='step-details'><span class='label white-text green'>MyBlockedProspects Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1007,15 +1069,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
 					<div class='test-heading'>
-						<span class='test-name'>ChatConversationsMessages</span>
-						<span class='test-time'>Mar 1, 2021 01:29:58 PM</span>
+						<span class='test-name'>SentMailMessages</span>
+						<span class='test-time'>Mar 9, 2021 12:37:23 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:29:58 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:01 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+277ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:23 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+966ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1029,8 +1091,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:01 PM</td>
-					<td class='step-details'><span class='label white-text green'>ChatConversationsMessages Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:26 PM</td>
+					<td class='step-details'><span class='label white-text green'>SentMailMessages Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1041,15 +1103,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
 					<div class='test-heading'>
-						<span class='test-name'>OnlineSecuritySupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:02 PM</span>
+						<span class='test-name'>ReceivedInterestsMessages</span>
+						<span class='test-time'>Mar 9, 2021 12:37:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:02 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+471ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:26 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+517ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1063,8 +1125,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:03 PM</td>
-					<td class='step-details'><span class='label white-text green'>OnlineSecuritySupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:27 PM</td>
+					<td class='step-details'><span class='label white-text green'>ReceivedInterestsMessages Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1075,15 +1137,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
 					<div class='test-heading'>
-						<span class='test-name'>RelationshipAdviceSupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:03 PM</span>
+						<span class='test-name'>SentInterestMessages</span>
+						<span class='test-time'>Mar 9, 2021 12:37:28 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:03 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+491ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:28 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+89ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1097,8 +1159,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:05 PM</td>
-					<td class='step-details'><span class='label white-text green'>RelationshipAdviceSupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:31 PM</td>
+					<td class='step-details'><span class='label white-text green'>SentInterestMessages Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1109,15 +1171,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
 					<div class='test-heading'>
-						<span class='test-name'>HelpPagesSupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:05 PM</span>
+						<span class='test-name'>ChatConversationsMessages</span>
+						<span class='test-time'>Mar 9, 2021 12:37:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:05 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+121ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:31 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+517ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1131,8 +1193,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:06 PM</td>
-					<td class='step-details'><span class='label white-text green'>HelpPagesSupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:35 PM</td>
+					<td class='step-details'><span class='label white-text green'>ChatConversationsMessages Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1143,15 +1205,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
 					<div class='test-heading'>
-						<span class='test-name'>TestimonialsSupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:06 PM</span>
+						<span class='test-name'>OnlineSecuritySupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:35 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:06 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+67ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:35 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+713ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1165,8 +1227,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:07 PM</td>
-					<td class='step-details'><span class='label white-text green'>TestimonialsSupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:38 PM</td>
+					<td class='step-details'><span class='label white-text green'>OnlineSecuritySupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1177,15 +1239,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
 					<div class='test-heading'>
-						<span class='test-name'>AboutUsSupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:07 PM</span>
+						<span class='test-name'>RelationshipAdviceSupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:38 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:07 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+228ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:38 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+323ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1199,8 +1261,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:08 PM</td>
-					<td class='step-details'><span class='label white-text green'>AboutUsSupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:40 PM</td>
+					<td class='step-details'><span class='label white-text green'>RelationshipAdviceSupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1211,15 +1273,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
 					<div class='test-heading'>
-						<span class='test-name'>ContactUsSupport</span>
-						<span class='test-time'>Mar 1, 2021 01:30:09 PM</span>
+						<span class='test-name'>HelpPagesSupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:40 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:09 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+99ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:40 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+28ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1233,8 +1295,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:14 PM</td>
-					<td class='step-details'><span class='label white-text green'>ContactUsSupport Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:41 PM</td>
+					<td class='step-details'><span class='label white-text green'>HelpPagesSupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1245,15 +1307,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
 					<div class='test-heading'>
-						<span class='test-name'>Viewed</span>
-						<span class='test-time'>Mar 1, 2021 01:30:14 PM</span>
+						<span class='test-name'>TestimonialsSupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:41 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:14 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+91ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:41 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+761ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1267,8 +1329,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:15 PM</td>
-					<td class='step-details'><span class='label white-text green'>Viewed Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:43 PM</td>
+					<td class='step-details'><span class='label white-text green'>TestimonialsSupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1279,15 +1341,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
 					<div class='test-heading'>
-						<span class='test-name'>Recent</span>
-						<span class='test-time'>Mar 1, 2021 01:30:15 PM</span>
+						<span class='test-name'>AboutUsSupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:43 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:15 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:17 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+677ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:43 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+473ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1301,8 +1363,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:17 PM</td>
-					<td class='step-details'><span class='label white-text green'>Recent Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:45 PM</td>
+					<td class='step-details'><span class='label white-text green'>AboutUsSupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1313,15 +1375,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
 					<div class='test-heading'>
-						<span class='test-name'>Online</span>
-						<span class='test-time'>Mar 1, 2021 01:30:17 PM</span>
+						<span class='test-name'>ContactUsSupport</span>
+						<span class='test-time'>Mar 9, 2021 12:37:45 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:17 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:18 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+358ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:45 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+396ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1335,8 +1397,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:18 PM</td>
-					<td class='step-details'><span class='label white-text green'>Online Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:49 PM</td>
+					<td class='step-details'><span class='label white-text green'>ContactUsSupport Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1347,15 +1409,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
 					<div class='test-heading'>
-						<span class='test-name'>Favours</span>
-						<span class='test-time'>Mar 1, 2021 01:30:19 PM</span>
+						<span class='test-name'>Viewed</span>
+						<span class='test-time'>Mar 9, 2021 12:37:50 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:19 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+196ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:50 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+447ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1369,8 +1431,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:20 PM</td>
-					<td class='step-details'><span class='label white-text green'>Favours Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:52 PM</td>
+					<td class='step-details'><span class='label white-text green'>Viewed Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1381,15 +1443,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
 					<div class='test-heading'>
-						<span class='test-name'>Interests</span>
-						<span class='test-time'>Mar 1, 2021 01:30:20 PM</span>
+						<span class='test-name'>Recent</span>
+						<span class='test-time'>Mar 9, 2021 12:37:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:20 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+16ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:52 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+937ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1403,8 +1465,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:21 PM</td>
-					<td class='step-details'><span class='label white-text green'>Interests Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:54 PM</td>
+					<td class='step-details'><span class='label white-text green'>Recent Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1415,15 +1477,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
 					<div class='test-heading'>
-						<span class='test-name'>Mail</span>
-						<span class='test-time'>Mar 1, 2021 01:30:21 PM</span>
+						<span class='test-name'>Online</span>
+						<span class='test-time'>Mar 9, 2021 12:37:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:21 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+239ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:54 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+488ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1437,8 +1499,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:26 PM</td>
-					<td class='step-details'><span class='label white-text green'>Mail Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:56 PM</td>
+					<td class='step-details'><span class='label white-text green'>Online Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1449,15 +1511,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
 					<div class='test-heading'>
-						<span class='test-name'>Logout</span>
-						<span class='test-time'>Mar 1, 2021 01:30:27 PM</span>
+						<span class='test-name'>Favours</span>
+						<span class='test-time'>Mar 9, 2021 12:37:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2021 01:30:27 PM</span>
-	<span class='label end-time'>Mar 1, 2021 01:30:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+637ms</span>
+	<span class='label start-time'>Mar 9, 2021 12:37:56 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+342ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -1471,8 +1533,76 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:30:38 PM</td>
-					<td class='step-details'><span class='label white-text green'>Logout Test Case is Passed</span></td>
+					<td class='timestamp'>12:37:57 PM</td>
+					<td class='step-details'><span class='label white-text green'>Favours Test Case is Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>Interests</span>
+						<span class='test-time'>Mar 9, 2021 12:37:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 9, 2021 12:37:58 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:37:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+601ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:37:59 PM</td>
+					<td class='step-details'><span class='label white-text green'>Interests Test Case is Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>Mail</span>
+						<span class='test-time'>Mar 9, 2021 12:37:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 9, 2021 12:37:59 PM</span>
+	<span class='label end-time'>Mar 9, 2021 12:38:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+242ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:38:19 PM</td>
+					<td class='step-details'><span class='label white-text green'>Mail Test Case is Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1505,6 +1635,122 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 9, 2021 12:35:42 PM</td>
+                                                        <td class='linked' test-id='10'>Chat</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Your favourite added successfully.')]"}
+  (Session info: chrome=88.0.4324.190)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MACPK-WKS-0132', ip: '192.168.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUHAMM~1.IFT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a38d3957054fbd794f5bb68f5be2a81
+*** Element info: {Using=xpath, value=//div[contains(text(), 'Your favourite added successfully.')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at TestCases.Chat.chat(Chat.java:47)
+	at Master.ExecutionFile.Chat(ExecutionFile.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at Master.TestRunner.main(TestRunner.java:12)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1514,31 +1760,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>39</div>
+					<div class='panel-lead'>41</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>39</div>
+					<div class='panel-lead'>42</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 1, 2021 01:27:12 PM</div>
+					<div class='panel-lead'>Mar 9, 2021 12:32:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 1, 2021 01:30:38 PM</div>
+			 		<div class='panel-lead'>Mar 9, 2021 12:38:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 26s+893ms</div>
+					<div class='panel-lead'>0h 5m 46s+532ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1579,22 +1825,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 39,
-				failParent: 0,
+				passParent: 40,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 39,
-				failChild: 0,
+				passChild: 40,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

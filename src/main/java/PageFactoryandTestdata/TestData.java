@@ -27,6 +27,7 @@ public class TestData {
 	// EDIT VERIFICATION
 	public static String REALNAME="Julia John"; 
 	public static String MOBILENUMBER="123456"; 
+	public static String VERIFICATIONCODE="123456"; 
 	
 	// REPLY CHAT
 	public static String REPLY="Testing Message"; 
