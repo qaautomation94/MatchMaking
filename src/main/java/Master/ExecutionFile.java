@@ -84,25 +84,43 @@ public class ExecutionFile {
 	 	Login.forgotPassword();		
  	}
 	
-	
-	@Test(priority=4)
-	 		public   void LoginApp() throws InterruptedException, AWTException, IOException{
-				 	Login.login();		
-			 	}
-
-	@Test(priority=5)
-	public   void Delete_User() throws InterruptedException, AWTException, IOException{
-	 	Login.DeleteUser();
-	
-	 	
- 	}
-	@Test(priority=6)
+		@Test(priority=6)
 		public   void ALoginApp() throws InterruptedException, AWTException, IOException{
 		 	Login.loginold();		
 	 	}
 
-	
-	
+
+		@Test(priority=7)
+		public   void Viewed() throws InterruptedException, AWTException, IOException{
+			Viewed.viewed();
+		}
+		
+		@Test(priority=8)
+		public   void Recent() throws InterruptedException, AWTException, IOException{
+			Recent.recent();
+		}
+		
+		@Test(priority=9)
+		public   void Online() throws InterruptedException, AWTException, IOException{
+			Online.online();
+		}
+		
+		@Test(priority=10)
+		public   void Favours() throws InterruptedException, AWTException, IOException{
+			Favours.favours();
+		}
+		
+		@Test(priority=11)
+		public   void Interests() throws InterruptedException, AWTException, IOException{
+			Interests.interests();
+		}
+
+		@Test(priority=12)
+		public   void Mail() throws InterruptedException, AWTException, IOException{
+			Mail.mail();
+		}
+
+		/*
 	@Test(priority=7)
 		public   void Profile() throws InterruptedException, AWTException, IOException{
 		 	Profile.editProfile();
@@ -142,12 +160,13 @@ public class ExecutionFile {
 	public   void EditVerification() throws InterruptedException, AWTException, IOException{
 	 	Profile.editVerification();
 	}
-	
+	*/
 	@Test(priority=15)
 	public   void Chat() throws InterruptedException, AWTException, IOException{
-	 	Chat.chat();
+	// 	Chat.chat();
  	}
-
+	
+	/*
 	@Test(priority=16)
 	public   void BasicSearch() throws InterruptedException, AWTException, IOException{
 	 	Search.basicSearch();
@@ -275,38 +294,25 @@ public class ExecutionFile {
 		Support.contactUsSupport();
 		
 	}
-	
-	@Test(priority=41)
-	public   void Viewed() throws InterruptedException, AWTException, IOException{
-		Viewed.viewed();
-	}
-	
-	@Test(priority=42)
-	public   void Recent() throws InterruptedException, AWTException, IOException{
-		Recent.recent();
-	}
-	
-	@Test(priority=43)
-	public   void Online() throws InterruptedException, AWTException, IOException{
-		Online.online();
-	}
-	
-	@Test(priority=44)
-	public   void Favours() throws InterruptedException, AWTException, IOException{
-		Favours.favours();
-	}
-	
-	@Test(priority=45)
-	public   void Interests() throws InterruptedException, AWTException, IOException{
-		Interests.interests();
-	}
+	*/
 
-	@Test(priority=46)
-	public   void Mail() throws InterruptedException, AWTException, IOException{
-		Mail.mail();
-	}
+	@Test(priority=50)
+	public   void LogoutAdmin() throws InterruptedException, AWTException, IOException{
+	 	Logout.logout();
+ 	}
+
+	@Test(priority=51)
+	 		public   void LoginApp() throws InterruptedException, AWTException, IOException{
+				 	Login.login();		
+			 	}
+
+	@Test(priority=53)
+	public   void Delete_User() throws InterruptedException, AWTException, IOException{
+	 	Login.DeleteUser();
 	
-	
+	 	
+ 	}
+
 			@AfterMethod
 			public void getResult(ITestResult result) throws IOException, InterruptedException{
 				 //System.out.println(result.getStatus());

@@ -37,8 +37,9 @@ public class SignUp extends HelpingFunction  {
 			        // Print next int value 
 			        // Returns number between 0-9 
 			        int nxt = ran.nextInt(999999); 
-				      String user = "test"+nxt;
-
+				       user = "test"+nxt;
+				   //   String user = "test15234";
+ 
 					Input("Please Enter UserName", GetData.SignUpUserName, user);
 					Input("Please Create Password", GetData.CreatePassword, TestData.CREATEPASSWORD);
 //					int min=1;
@@ -47,7 +48,7 @@ public class SignUp extends HelpingFunction  {
 
 				      
 					
-				//       email = "eranaka.indu@gmail.com";
+				    //   email = "iftikhar.bscs@gmail.com";
 				       email = "test"+nxt+"@gmail.com";
 
 					

@@ -1,788 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="46" passed="45" failed="1" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-12T17:30:11 PKT" name="Default suite" finished-at="2021-03-12T17:37:36 PKT" duration-ms="445464">
+  <suite started-at="2021-03-16T19:15:54 PKT" name="Default suite" finished-at="2021-03-16T19:18:48 PKT" duration-ms="173579">
     <groups>
     </groups>
-    <test started-at="2021-03-12T17:30:11 PKT" name="Default test" finished-at="2021-03-12T17:37:36 PKT" duration-ms="445464">
+    <test started-at="2021-03-16T19:15:54 PKT" name="Default test" finished-at="2021-03-16T19:18:48 PKT" duration-ms="173579">
       <class name="Master.ExecutionFile">
-        <test-method is-config="true" signature="SystmProperties()[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:30:10 PKT" name="SystmProperties" finished-at="2021-03-12T17:30:11 PKT" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="SystmProperties()[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:15:54 PKT" name="SystmProperties" finished-at="2021-03-16T19:15:54 PKT" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SystmProperties -->
-        <test-method is-config="true" signature="Startup()[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:30:11 PKT" name="Startup" finished-at="2021-03-12T17:30:18 PKT" duration-ms="7389" status="PASS">
+        <test-method is-config="true" signature="Startup()[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:15:55 PKT" name="Startup" finished-at="2021-03-16T19:16:01 PKT" duration-ms="6951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startup -->
-        <test-method signature="SignUp()[pri:1, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:30:18 PKT" name="SignUp" finished-at="2021-03-12T17:31:15 PKT" duration-ms="56850" status="PASS">
+        <test-method signature="SignUp()[pri:1, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:16:02 PKT" name="SignUp" finished-at="2021-03-16T19:16:53 PKT" duration-ms="51406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:15 PKT" name="getResult" finished-at="2021-03-12T17:31:17 PKT" duration-ms="2204" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:16:53 PKT" name="getResult" finished-at="2021-03-16T19:16:54 PKT" duration-ms="1243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SignUp status=SUCCESS method=ExecutionFile.SignUp()[pri:1, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=SignUp status=SUCCESS method=ExecutionFile.SignUp()[pri:1, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Logout()[pri:2, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:17 PKT" name="Logout" finished-at="2021-03-12T17:31:30 PKT" duration-ms="12787" status="PASS">
+        <test-method signature="Logout()[pri:2, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:16:54 PKT" name="Logout" finished-at="2021-03-16T19:17:06 PKT" duration-ms="11330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:30 PKT" name="getResult" finished-at="2021-03-12T17:31:30 PKT" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:06 PKT" name="getResult" finished-at="2021-03-16T19:17:06 PKT" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=ExecutionFile.Logout()[pri:2, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ExecutionFile.Logout()[pri:2, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ForgotPassword()[pri:3, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:30 PKT" name="ForgotPassword" finished-at="2021-03-12T17:31:41 PKT" duration-ms="10527" status="PASS">
+        <test-method signature="ForgotPassword()[pri:3, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:06 PKT" name="ForgotPassword" finished-at="2021-03-16T19:17:16 PKT" duration-ms="9970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:41 PKT" name="getResult" finished-at="2021-03-12T17:31:41 PKT" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:16 PKT" name="getResult" finished-at="2021-03-16T19:17:16 PKT" duration-ms="190" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=ExecutionFile.ForgotPassword()[pri:3, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=ExecutionFile.ForgotPassword()[pri:3, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="LoginApp()[pri:4, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:41 PKT" name="LoginApp" finished-at="2021-03-12T17:31:55 PKT" duration-ms="13386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginApp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:55 PKT" name="getResult" finished-at="2021-03-12T17:31:55 PKT" duration-ms="228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginApp status=SUCCESS method=ExecutionFile.LoginApp()[pri:4, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="Delete_User()[pri:5, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:31:55 PKT" name="Delete_User" finished-at="2021-03-12T17:32:13 PKT" duration-ms="18470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Delete_User -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:13 PKT" name="getResult" finished-at="2021-03-12T17:32:14 PKT" duration-ms="345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Delete_User status=SUCCESS method=ExecutionFile.Delete_User()[pri:5, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ALoginApp()[pri:6, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:14 PKT" name="ALoginApp" finished-at="2021-03-12T17:32:23 PKT" duration-ms="9657" status="PASS">
+        <test-method signature="ALoginApp()[pri:6, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:16 PKT" name="ALoginApp" finished-at="2021-03-16T19:17:36 PKT" duration-ms="20021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ALoginApp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:23 PKT" name="getResult" finished-at="2021-03-12T17:32:23 PKT" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:36 PKT" name="getResult" finished-at="2021-03-16T19:17:36 PKT" duration-ms="265" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ALoginApp status=SUCCESS method=ExecutionFile.ALoginApp()[pri:6, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=ALoginApp status=SUCCESS method=ExecutionFile.ALoginApp()[pri:6, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Profile()[pri:7, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:23 PKT" name="Profile" finished-at="2021-03-12T17:32:41 PKT" duration-ms="17666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Profile -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:41 PKT" name="getResult" finished-at="2021-03-12T17:32:41 PKT" duration-ms="322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Profile status=SUCCESS method=ExecutionFile.Profile()[pri:7, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditVideos()[pri:8, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:41 PKT" name="EditVideos" finished-at="2021-03-12T17:32:53 PKT" duration-ms="11696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditVideos -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:53 PKT" name="getResult" finished-at="2021-03-12T17:32:53 PKT" duration-ms="246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditVideos status=SUCCESS method=ExecutionFile.EditVideos()[pri:8, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditAccount()[pri:9, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:32:53 PKT" name="EditAccount" finished-at="2021-03-12T17:33:14 PKT" duration-ms="21000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditAccount -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:14 PKT" name="getResult" finished-at="2021-03-12T17:33:15 PKT" duration-ms="260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditAccount status=SUCCESS method=ExecutionFile.EditAccount()[pri:9, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditPhotos()[pri:10, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:15 PKT" name="EditPhotos" finished-at="2021-03-12T17:33:42 PKT" duration-ms="27123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditPhotos -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:42 PKT" name="getResult" finished-at="2021-03-12T17:33:42 PKT" duration-ms="349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditPhotos status=SUCCESS method=ExecutionFile.EditPhotos()[pri:10, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditPersonal()[pri:11, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:42 PKT" name="EditPersonal" finished-at="2021-03-12T17:33:56 PKT" duration-ms="14048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditPersonal -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:56 PKT" name="getResult" finished-at="2021-03-12T17:33:56 PKT" duration-ms="160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditPersonal status=SUCCESS method=ExecutionFile.EditPersonal()[pri:11, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditPartner()[pri:12, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:33:56 PKT" name="EditPartner" finished-at="2021-03-12T17:34:11 PKT" duration-ms="14974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditPartner -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:34:11 PKT" name="getResult" finished-at="2021-03-12T17:34:11 PKT" duration-ms="160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditPartner status=SUCCESS method=ExecutionFile.EditPartner()[pri:12, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditSettings()[pri:13, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:34:11 PKT" name="EditSettings" finished-at="2021-03-12T17:34:26 PKT" duration-ms="14753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditSettings -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:34:26 PKT" name="getResult" finished-at="2021-03-12T17:34:26 PKT" duration-ms="242" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditSettings status=SUCCESS method=ExecutionFile.EditSettings()[pri:13, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="EditVerification()[pri:14, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:34:27 PKT" name="EditVerification" finished-at="2021-03-12T17:35:09 PKT" duration-ms="42959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditVerification -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:35:09 PKT" name="getResult" finished-at="2021-03-12T17:35:10 PKT" duration-ms="953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EditVerification status=SUCCESS method=ExecutionFile.EditVerification()[pri:14, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="Chat()[pri:15, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:35:10 PKT" name="Chat" finished-at="2021-03-12T17:36:00 PKT" duration-ms="49462" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Your favourite added successfully.')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MACPK-WKS-0132', ip: '172.25.178.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\MUHAMM~1.IFT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce8205db47caff242066525f30e2048a
-*** Element info: {Using=xpath, value=//div[contains(text(), 'Your favourite added successfully.')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Your favourite added successfully.')]"}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MACPK-WKS-0132', ip: '172.25.178.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\MUHAMM~1.IFT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ce8205db47caff242066525f30e2048a
-*** Element info: {Using=xpath, value=//div[contains(text(), 'Your favourite added successfully.')]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
-at TestCases.Chat.chat(Chat.java:47)
-at Master.ExecutionFile.Chat(ExecutionFile.java:148)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Chat -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:00 PKT" name="getResult" finished-at="2021-03-12T17:36:00 PKT" duration-ms="254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Chat status=FAILURE method=ExecutionFile.Chat()[pri:15, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="BasicSearch()[pri:16, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:00 PKT" name="BasicSearch" finished-at="2021-03-12T17:36:05 PKT" duration-ms="5047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BasicSearch -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:05 PKT" name="getResult" finished-at="2021-03-12T17:36:05 PKT" duration-ms="283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BasicSearch status=SUCCESS method=ExecutionFile.BasicSearch()[pri:16, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="AdvanceSearch()[pri:17, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:05 PKT" name="AdvanceSearch" finished-at="2021-03-12T17:36:12 PKT" duration-ms="6499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdvanceSearch -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:12 PKT" name="getResult" finished-at="2021-03-12T17:36:12 PKT" duration-ms="425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AdvanceSearch status=SUCCESS method=ExecutionFile.AdvanceSearch()[pri:17, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="PhotoGallery()[pri:18, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:12 PKT" name="PhotoGallery" finished-at="2021-03-12T17:36:16 PKT" duration-ms="3507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PhotoGallery -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:16 PKT" name="getResult" finished-at="2021-03-12T17:36:16 PKT" duration-ms="218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PhotoGallery status=SUCCESS method=ExecutionFile.PhotoGallery()[pri:18, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="VideoGallery()[pri:19, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:16 PKT" name="VideoGallery" finished-at="2021-03-12T17:36:18 PKT" duration-ms="1888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VideoGallery -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:18 PKT" name="getResult" finished-at="2021-03-12T17:36:18 PKT" duration-ms="167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VideoGallery status=SUCCESS method=ExecutionFile.VideoGallery()[pri:19, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="OnlineMembers()[pri:20, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:18 PKT" name="OnlineMembers" finished-at="2021-03-12T17:36:20 PKT" duration-ms="1929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnlineMembers -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:20 PKT" name="getResult" finished-at="2021-03-12T17:36:20 PKT" duration-ms="226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OnlineMembers status=SUCCESS method=ExecutionFile.OnlineMembers()[pri:20, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="RecentMembers()[pri:21, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:20 PKT" name="RecentMembers" finished-at="2021-03-12T17:36:23 PKT" duration-ms="2642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RecentMembers -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:23 PKT" name="getResult" finished-at="2021-03-12T17:36:23 PKT" duration-ms="251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RecentMembers status=SUCCESS method=ExecutionFile.RecentMembers()[pri:21, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="VerifiedMembers()[pri:22, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:23 PKT" name="VerifiedMembers" finished-at="2021-03-12T17:36:29 PKT" duration-ms="5574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifiedMembers -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:29 PKT" name="getResult" finished-at="2021-03-12T17:36:29 PKT" duration-ms="199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifiedMembers status=SUCCESS method=ExecutionFile.VerifiedMembers()[pri:22, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="NewestMembers()[pri:23, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:29 PKT" name="NewestMembers" finished-at="2021-03-12T17:36:31 PKT" duration-ms="2035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NewestMembers -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:31 PKT" name="getResult" finished-at="2021-03-12T17:36:31 PKT" duration-ms="205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=NewestMembers status=SUCCESS method=ExecutionFile.NewestMembers()[pri:23, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="FeaturedMembers()[pri:24, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:31 PKT" name="FeaturedMembers" finished-at="2021-03-12T17:36:33 PKT" duration-ms="1913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FeaturedMembers -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:33 PKT" name="getResult" finished-at="2021-03-12T17:36:33 PKT" duration-ms="236" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=FeaturedMembers status=SUCCESS method=ExecutionFile.FeaturedMembers()[pri:24, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="MyMatchProspects()[pri:25, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:33 PKT" name="MyMatchProspects" finished-at="2021-03-12T17:36:36 PKT" duration-ms="2674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyMatchProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:36 PKT" name="getResult" finished-at="2021-03-12T17:36:36 PKT" duration-ms="142" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MyMatchProspects status=SUCCESS method=ExecutionFile.MyMatchProspects()[pri:25, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="mMFavouritesProspects()[pri:26, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:36 PKT" name="mMFavouritesProspects" finished-at="2021-03-12T17:36:38 PKT" duration-ms="1709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mMFavouritesProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:38 PKT" name="getResult" finished-at="2021-03-12T17:36:38 PKT" duration-ms="172" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=mMFavouritesProspects status=SUCCESS method=ExecutionFile.mMFavouritesProspects()[pri:26, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="FavoursMeProspects()[pri:27, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:38 PKT" name="FavoursMeProspects" finished-at="2021-03-12T17:36:40 PKT" duration-ms="1366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FavoursMeProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:40 PKT" name="getResult" finished-at="2021-03-12T17:36:40 PKT" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=FavoursMeProspects status=SUCCESS method=ExecutionFile.FavoursMeProspects()[pri:27, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="MyViewedProspects()[pri:28, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:40 PKT" name="MyViewedProspects" finished-at="2021-03-12T17:36:42 PKT" duration-ms="1916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyViewedProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:42 PKT" name="getResult" finished-at="2021-03-12T17:36:42 PKT" duration-ms="228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MyViewedProspects status=SUCCESS method=ExecutionFile.MyViewedProspects()[pri:28, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ViewedMeProspects()[pri:29, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:42 PKT" name="ViewedMeProspects" finished-at="2021-03-12T17:36:43 PKT" duration-ms="1416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ViewedMeProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:43 PKT" name="getResult" finished-at="2021-03-12T17:36:44 PKT" duration-ms="221" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ViewedMeProspects status=SUCCESS method=ExecutionFile.ViewedMeProspects()[pri:29, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="MyBlockedProspects()[pri:30, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:44 PKT" name="MyBlockedProspects" finished-at="2021-03-12T17:36:45 PKT" duration-ms="1427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyBlockedProspects -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:45 PKT" name="getResult" finished-at="2021-03-12T17:36:45 PKT" duration-ms="257" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MyBlockedProspects status=SUCCESS method=ExecutionFile.MyBlockedProspects()[pri:30, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="SentMailMessages()[pri:31, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:45 PKT" name="SentMailMessages" finished-at="2021-03-12T17:36:47 PKT" duration-ms="2045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SentMailMessages -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:47 PKT" name="getResult" finished-at="2021-03-12T17:36:47 PKT" duration-ms="158" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SentMailMessages status=SUCCESS method=ExecutionFile.SentMailMessages()[pri:31, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ReceivedInterestsMessages()[pri:32, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:47 PKT" name="ReceivedInterestsMessages" finished-at="2021-03-12T17:36:49 PKT" duration-ms="1620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReceivedInterestsMessages -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:49 PKT" name="getResult" finished-at="2021-03-12T17:36:49 PKT" duration-ms="240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ReceivedInterestsMessages status=SUCCESS method=ExecutionFile.ReceivedInterestsMessages()[pri:32, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="SentInterestMessages()[pri:33, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:49 PKT" name="SentInterestMessages" finished-at="2021-03-12T17:36:51 PKT" duration-ms="1603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SentInterestMessages -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:51 PKT" name="getResult" finished-at="2021-03-12T17:36:51 PKT" duration-ms="192" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SentInterestMessages status=SUCCESS method=ExecutionFile.SentInterestMessages()[pri:33, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ChatConversationsMessages()[pri:34, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:51 PKT" name="ChatConversationsMessages" finished-at="2021-03-12T17:36:54 PKT" duration-ms="3312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChatConversationsMessages -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:54 PKT" name="getResult" finished-at="2021-03-12T17:36:55 PKT" duration-ms="188" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChatConversationsMessages status=SUCCESS method=ExecutionFile.ChatConversationsMessages()[pri:34, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="OnlineSecuritySupport()[pri:35, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:55 PKT" name="OnlineSecuritySupport" finished-at="2021-03-12T17:36:57 PKT" duration-ms="1985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnlineSecuritySupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:57 PKT" name="getResult" finished-at="2021-03-12T17:36:57 PKT" duration-ms="143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OnlineSecuritySupport status=SUCCESS method=ExecutionFile.OnlineSecuritySupport()[pri:35, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="RelationshipAdviceSupport()[pri:36, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:57 PKT" name="RelationshipAdviceSupport" finished-at="2021-03-12T17:36:58 PKT" duration-ms="1171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RelationshipAdviceSupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:58 PKT" name="getResult" finished-at="2021-03-12T17:36:58 PKT" duration-ms="183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RelationshipAdviceSupport status=SUCCESS method=ExecutionFile.RelationshipAdviceSupport()[pri:36, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="HelpPagesSupport()[pri:37, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:36:58 PKT" name="HelpPagesSupport" finished-at="2021-03-12T17:37:00 PKT" duration-ms="1722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HelpPagesSupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:00 PKT" name="getResult" finished-at="2021-03-12T17:37:00 PKT" duration-ms="174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HelpPagesSupport status=SUCCESS method=ExecutionFile.HelpPagesSupport()[pri:37, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="TestimonialsSupport()[pri:38, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:00 PKT" name="TestimonialsSupport" finished-at="2021-03-12T17:37:01 PKT" duration-ms="1321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestimonialsSupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:01 PKT" name="getResult" finished-at="2021-03-12T17:37:01 PKT" duration-ms="142" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestimonialsSupport status=SUCCESS method=ExecutionFile.TestimonialsSupport()[pri:38, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="AboutUsSupport()[pri:39, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:01 PKT" name="AboutUsSupport" finished-at="2021-03-12T17:37:03 PKT" duration-ms="1237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AboutUsSupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:03 PKT" name="getResult" finished-at="2021-03-12T17:37:03 PKT" duration-ms="251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AboutUsSupport status=SUCCESS method=ExecutionFile.AboutUsSupport()[pri:39, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ContactUsSupport()[pri:40, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:03 PKT" name="ContactUsSupport" finished-at="2021-03-12T17:37:09 PKT" duration-ms="5671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactUsSupport -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:09 PKT" name="getResult" finished-at="2021-03-12T17:37:09 PKT" duration-ms="179" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ContactUsSupport status=SUCCESS method=ExecutionFile.ContactUsSupport()[pri:40, instance:Master.ExecutionFile@4445629] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="Viewed()[pri:41, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:09 PKT" name="Viewed" finished-at="2021-03-12T17:37:11 PKT" duration-ms="1767" status="PASS">
+        <test-method signature="Viewed()[pri:7, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:36 PKT" name="Viewed" finished-at="2021-03-16T19:17:37 PKT" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Viewed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:11 PKT" name="getResult" finished-at="2021-03-12T17:37:11 PKT" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:37 PKT" name="getResult" finished-at="2021-03-16T19:17:38 PKT" duration-ms="304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Viewed status=SUCCESS method=ExecutionFile.Viewed()[pri:41, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Viewed status=SUCCESS method=ExecutionFile.Viewed()[pri:7, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Recent()[pri:42, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:11 PKT" name="Recent" finished-at="2021-03-12T17:37:13 PKT" duration-ms="1904" status="PASS">
+        <test-method signature="Recent()[pri:8, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:38 PKT" name="Recent" finished-at="2021-03-16T19:17:41 PKT" duration-ms="2771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Recent -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:13 PKT" name="getResult" finished-at="2021-03-12T17:37:13 PKT" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:41 PKT" name="getResult" finished-at="2021-03-16T19:17:41 PKT" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Recent status=SUCCESS method=ExecutionFile.Recent()[pri:42, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Recent status=SUCCESS method=ExecutionFile.Recent()[pri:8, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Online()[pri:43, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:13 PKT" name="Online" finished-at="2021-03-12T17:37:14 PKT" duration-ms="1383" status="PASS">
+        <test-method signature="Online()[pri:9, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:41 PKT" name="Online" finished-at="2021-03-16T19:17:42 PKT" duration-ms="1675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Online -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:14 PKT" name="getResult" finished-at="2021-03-12T17:37:14 PKT" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:42 PKT" name="getResult" finished-at="2021-03-16T19:17:43 PKT" duration-ms="175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Online status=SUCCESS method=ExecutionFile.Online()[pri:43, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Online status=SUCCESS method=ExecutionFile.Online()[pri:9, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Favours()[pri:44, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:14 PKT" name="Favours" finished-at="2021-03-12T17:37:16 PKT" duration-ms="1817" status="PASS">
+        <test-method signature="Favours()[pri:10, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:43 PKT" name="Favours" finished-at="2021-03-16T19:17:44 PKT" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Favours -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:16 PKT" name="getResult" finished-at="2021-03-12T17:37:17 PKT" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:44 PKT" name="getResult" finished-at="2021-03-16T19:17:44 PKT" duration-ms="247" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Favours status=SUCCESS method=ExecutionFile.Favours()[pri:44, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Favours status=SUCCESS method=ExecutionFile.Favours()[pri:10, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Interests()[pri:45, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:17 PKT" name="Interests" finished-at="2021-03-12T17:37:19 PKT" duration-ms="2320" status="PASS">
+        <test-method signature="Interests()[pri:11, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:44 PKT" name="Interests" finished-at="2021-03-16T19:17:45 PKT" duration-ms="1234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Interests -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:19 PKT" name="getResult" finished-at="2021-03-12T17:37:19 PKT" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:45 PKT" name="getResult" finished-at="2021-03-16T19:17:45 PKT" duration-ms="157" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Interests status=SUCCESS method=ExecutionFile.Interests()[pri:45, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Interests status=SUCCESS method=ExecutionFile.Interests()[pri:11, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Mail()[pri:46, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:19 PKT" name="Mail" finished-at="2021-03-12T17:37:36 PKT" duration-ms="16862" status="PASS">
+        <test-method signature="Mail()[pri:12, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:17:45 PKT" name="Mail" finished-at="2021-03-16T19:18:04 PKT" duration-ms="18621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Mail -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:36 PKT" name="getResult" finished-at="2021-03-12T17:37:36 PKT" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:04 PKT" name="getResult" finished-at="2021-03-16T19:18:05 PKT" duration-ms="445" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Mail status=SUCCESS method=ExecutionFile.Mail()[pri:46, instance:Master.ExecutionFile@4445629] output={null}]]]>
+                <![CDATA[[TestResult name=Mail status=SUCCESS method=ExecutionFile.Mail()[pri:12, instance:Master.ExecutionFile@3901d134] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:36 PKT" name="endReport" finished-at="2021-03-12T17:37:36 PKT" duration-ms="0" status="PASS">
+        <test-method signature="Chat()[pri:15, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:05 PKT" name="Chat" finished-at="2021-03-16T19:18:05 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chat -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:05 PKT" name="getResult" finished-at="2021-03-16T19:18:05 PKT" duration-ms="364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Chat status=SUCCESS method=ExecutionFile.Chat()[pri:15, instance:Master.ExecutionFile@3901d134] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="LogoutAdmin()[pri:50, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:05 PKT" name="LogoutAdmin" finished-at="2021-03-16T19:18:16 PKT" duration-ms="11166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutAdmin -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:16 PKT" name="getResult" finished-at="2021-03-16T19:18:16 PKT" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LogoutAdmin status=SUCCESS method=ExecutionFile.LogoutAdmin()[pri:50, instance:Master.ExecutionFile@3901d134] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="LoginApp()[pri:51, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:16 PKT" name="LoginApp" finished-at="2021-03-16T19:18:29 PKT" duration-ms="12555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApp -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:29 PKT" name="getResult" finished-at="2021-03-16T19:18:29 PKT" duration-ms="163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginApp status=SUCCESS method=ExecutionFile.LoginApp()[pri:51, instance:Master.ExecutionFile@3901d134] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Delete_User()[pri:53, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:29 PKT" name="Delete_User" finished-at="2021-03-16T19:18:48 PKT" duration-ms="18765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_User -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:48 PKT" name="getResult" finished-at="2021-03-16T19:18:48 PKT" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Delete_User status=SUCCESS method=ExecutionFile.Delete_User()[pri:53, instance:Master.ExecutionFile@3901d134] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:48 PKT" name="endReport" finished-at="2021-03-16T19:18:48 PKT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Master.ExecutionFile@4445629]" started-at="2021-03-12T17:37:36 PKT" name="CloseBrowser" finished-at="2021-03-12T17:37:36 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Master.ExecutionFile@3901d134]" started-at="2021-03-16T19:18:48 PKT" name="CloseBrowser" finished-at="2021-03-16T19:18:48 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

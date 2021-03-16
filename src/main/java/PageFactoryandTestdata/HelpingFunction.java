@@ -7,8 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 import Master.ExecutionFile;
 public class HelpingFunction extends ExecutionFile{
-				static String user=System.getProperty("user.name");
-				public static String downloadPath = "C:\\Users\\"+user+"\\Downloads";
+//				static String user=System.getProperty("user.name");
+//				public static String downloadPath = "C:\\Users\\"+user+"\\Downloads";
+				 public static String user;
 			public static void Input(String message, WebElement key,String value){
 					try {
 						key.clear();

@@ -24,10 +24,9 @@ public class Login extends HelpingFunction  {
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
 					driver.get(envirnment);
-//					Input("Please Enter UserName", GetData.UserName, TestData.USER);
-//					Input("Please Enter Password", GetData.Password, TestData.PASS);
 
-					Input("Please Enter UserName", GetData.UserName, email);
+
+					Input("Please Enter UserName", GetData.UserName, user);
 					Input("Please Enter Password", GetData.Password, TestData.CREATEPASSWORD);
 					Thread.sleep(3000);
 
@@ -51,9 +50,10 @@ public class Login extends HelpingFunction  {
 //					Thread.sleep(3000);
 
 					Click("Please click login button",GetData.LoginButton);
-					Thread.sleep(5000);
-
+					Thread.sleep(15000);
+					String url = driver.getCurrentUrl();
 					
+					driver.get("https://www.nepal-matrimony.com/profile/"+user);
 				}
 				public static  void DeleteUser() throws InterruptedException, AWTException, IOException{
 					

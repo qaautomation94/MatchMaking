@@ -24,7 +24,7 @@ public class Chat extends HelpingFunction  {
 						
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
-					driver.get(envirnment);
+//					driver.get(envirnment);
 
 					Click("Please click chat button",GetData.ChatButton);
 					Thread.sleep(3000);
