@@ -26,16 +26,15 @@ public class Mail extends HelpingFunction  {
 						
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					driver.get("https://www.nepal-matrimony.com/profile/"+user);
 
-					Click("Please click Mail button",GetData.Mail);
+			//		Click("Please click Mail button",GetData.Mail);
+					Click("Please click Mail button",GetData.SendEmail);
+
+					
 					driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 					
-					JavascriptExecutor js = (JavascriptExecutor) driver;
-					js.executeScript("window.scrollBy(0,300)");
 					
-					Click("Please click View Mail button",GetData.ViewMail);
-					driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-					Click("Please click Reply Mail button",GetData.ReplyMail);
 					
 					JavascriptExecutor scroll2 = (JavascriptExecutor) driver;
 					scroll2.executeScript("window.scrollBy(0,900)");
@@ -79,6 +78,33 @@ public class Mail extends HelpingFunction  {
 					
 					Assert.assertTrue(GetData.SentMessageTitle.isDisplayed());
 				}
+
+				public static  void Report() throws InterruptedException, AWTException, IOException{
+					
+					
+					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
+					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					driver.get("https://www.nepal-matrimony.com/profile/"+user);
+					Thread.sleep(10000);
+					Click("Please click Mail button",GetData.toggle);
+					Click("Please click Mail button",GetData.Report);
+
+					
+					}
+				public static  void Block() throws InterruptedException, AWTException, IOException{
+					
+					
+					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
+					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					driver.get("https://www.nepal-matrimony.com/profile/"+user);
+					Thread.sleep(10000);
+					Click("Please click Mail button",GetData.toggle);
+					Click("Please click Mail button",GetData.Block);
+
+					
+					}
+
 				
+
 }
 

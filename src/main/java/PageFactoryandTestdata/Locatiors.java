@@ -224,6 +224,11 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//h3[contains(@class,'header_big')]") public WebElement ChatConversationsTitle;
 	@FindBy(xpath="//button[contains(@id, 'btn_2')]") public WebElement ViewChat;
 	@FindBy(xpath="//b[contains(@class,'btn btn-sm btn-success btn-block')]") public WebElement ReplyChat;
+
+	
+	//button[contains(text(), 'Send')]
+	@FindBy(xpath="//b[contains(text(), 'Send Message')]") public WebElement sendmessage;
+
 	@FindBy(xpath="//input[contains(@maxlength,'180')]") public WebElement RepltText;
 	@FindBy(xpath="//button[contains(text(),'Send')]") public WebElement Send;
 	@FindBy(xpath="//button[contains(text(),'×')]") public WebElement CloseChat;
@@ -260,7 +265,17 @@ public class Locatiors extends ExecutionFile{
 	//INTERESTS
 	@FindBy(xpath="//a[contains(text(),'Interests')]") public WebElement Interests;
 	
+	
+	@FindBy(xpath="//a[contains(@data-toggle, 'dropdown')]/img") public WebElement toggle;
+
+	@FindBy(xpath="(//a[contains(@class, 'dropdown-item small')])[2]") public WebElement Report;
+	@FindBy(xpath="(//a[contains(@class, 'dropdown-item small')])[1]") public WebElement Block;
+
+
 	//MAIL
+	
+	@FindBy(xpath="//a[contains(@title, 'Send an email')]") public WebElement SendEmail;
+
 	@FindBy(xpath="//a[contains(text(),'Mail')]") public WebElement Mail;
 	@FindBy(xpath="//button[contains(text(),'View Mail')]") public WebElement ViewMail;
 	@FindBy(xpath="//button[contains(text(),'Reply Mail')]") public WebElement ReplyMail;

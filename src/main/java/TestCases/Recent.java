@@ -21,7 +21,7 @@ public class Recent extends HelpingFunction  {
 						
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
-
+					Thread.sleep(15000);
 					Click("Please click Viewed button",GetData.Recent);
 					driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 					
