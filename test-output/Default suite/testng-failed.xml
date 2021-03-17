@@ -7,9 +7,8 @@
         <methods>
           <include name="getResult"/>
           <include name="endReport"/>
-          <include name="BlockProfile"/>
           <include name="SystmProperties"/>
-          <include name="ReportProfile"/>
+          <include name="Chat"/>
           <include name="Startup"/>
           <include name="CloseBrowser"/>
         </methods>

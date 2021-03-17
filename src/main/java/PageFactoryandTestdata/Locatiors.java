@@ -73,6 +73,8 @@ public class Locatiors extends ExecutionFile{
 	@FindBy(xpath="//a[contains(text(), 'Edit Photos')]") public WebElement EditPhotos;
 	@FindBy(xpath="//input[contains(@id, 'photo_name')]") public WebElement PhotoName;
 	@FindBy(xpath="//textarea[contains(@id, 'description')]") public WebElement Description;
+	@FindBy(xpath="//input[contains(@id,'Submit')]") public WebElement SaveProfilePhoto;
+	@FindBy(xpath="//button[contains(@id, 'Delete')]") public WebElement DeletePhoto;
 	
 	//PROFILE EDIT VIDEO
 	@FindBy(xpath="//input[contains(@id, 'audio_url')]") public WebElement VideoURL;
@@ -229,7 +231,7 @@ public class Locatiors extends ExecutionFile{
 	//button[contains(text(), 'Send')]
 	@FindBy(xpath="//b[contains(text(), 'Send Message')]") public WebElement sendmessage;
 
-	@FindBy(xpath="//input[contains(@maxlength,'180')]") public WebElement RepltText;
+	@FindBy(xpath="//input[contains(@maxlength,'180')]") public WebElement ReplyText;
 	@FindBy(xpath="//button[contains(text(),'Send')]") public WebElement Send;
 	@FindBy(xpath="//button[contains(text(),'×')]") public WebElement CloseChat;
 	@FindBy(xpath="//button[contains(text(),'Hide Chat')]") public WebElement HideCaht;

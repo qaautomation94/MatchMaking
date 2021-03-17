@@ -4,13 +4,17 @@ package TestCases;
 
 import java.awt.AWTException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import PageFactoryandTestdata.HelpingFunction;
@@ -79,10 +83,35 @@ public class Profile extends HelpingFunction  {
 				    driver.switchTo().defaultContent();
 				    Thread.sleep(2000);
 					
-					Click("Please click Send Message button",GetData.SendMessage);
+					Click("Please click Save this Photo to Profile button",GetData.SaveProfilePhoto);
+					
+					Thread.sleep(5000);
 					
 
+				}
+				
+				public static  void deletePhoto() throws InterruptedException, AWTException, IOException{
 					
+					
+					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
+					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("window.scrollBy(0,300)");
+					Click("Please click Delete button",GetData.DeletePhoto);
+					
+					 WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
+					 	wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+										     	try{
+				     		wait.until(ExpectedConditions.alertIsPresent());
+				     		 Alert alert = driver.switchTo().alert();		
+				     		 alert.accept();
+				     	}
+				     	catch (Exception e) {
+				     	
+				         }
+					
+					Assert.assertTrue(GetData.SuccessfullyUpdated.isDisplayed());
 				}
 				
 				public static  void editVideos() throws InterruptedException, AWTException, IOException{

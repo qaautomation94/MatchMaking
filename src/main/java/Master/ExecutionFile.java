@@ -78,7 +78,7 @@ public class ExecutionFile {
 	public   void Logout() throws InterruptedException, AWTException, IOException{
 	 	Logout.logout();
  	}
-	
+
 	@Test(priority=3)
 	public   void ForgotPassword() throws InterruptedException, AWTException, IOException{
 	 	Login.forgotPassword();		
@@ -119,6 +119,11 @@ public class ExecutionFile {
 		public   void Mail() throws InterruptedException, AWTException, IOException{
 			Mail.mail();
 		}
+	
+		@Test(priority=12)
+		public   void Chat() throws InterruptedException, AWTException, IOException{
+		 	Chat.chat();
+	 	}
 		
 		@Test(priority=13)
 		public   void ReportProfile() throws InterruptedException, AWTException, IOException{
@@ -129,7 +134,6 @@ public class ExecutionFile {
 		public   void BlockProfile() throws InterruptedException, AWTException, IOException{
 			Mail.Block();
 		}
-
 		
 	@Test(priority=15)
 		public   void Profile() throws InterruptedException, AWTException, IOException{
@@ -149,6 +153,11 @@ public class ExecutionFile {
 	@Test(priority=18)
 	public   void EditPhotos() throws InterruptedException, AWTException, IOException{
 	 	Profile.editPhotos();
+ 	}
+	
+	@Test(dependsOnMethods = { "EditPhotos" })
+	public   void DeletePhoto() throws InterruptedException, AWTException, IOException{
+	 	Profile.deletePhoto();
  	}
 
 	@Test(priority=19)
@@ -171,10 +180,6 @@ public class ExecutionFile {
 	 	Profile.editVerification();
 	}
 	
-	@Test(priority=23)
-	public   void Chat() throws InterruptedException, AWTException, IOException{
-	 	Chat.chat();
- 	}
 	
 	
 	@Test(priority=24)
@@ -270,7 +275,7 @@ public class ExecutionFile {
 	
 	@Test(priority=42)
 	public   void ChatConversationsMessages() throws InterruptedException, AWTException, IOException{
-	 	Messages.chatConversationsMessages();
+	// 	Messages.chatConversationsMessages();
 	}
 	
 	@Test(priority=43)
@@ -304,7 +309,7 @@ public class ExecutionFile {
 		Support.contactUsSupport();
 		
 	}
-	
+
 
 	@Test(priority=50)
 	public   void LogoutAdmin() throws InterruptedException, AWTException, IOException{

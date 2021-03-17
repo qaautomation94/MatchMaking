@@ -102,6 +102,7 @@ public class Messages extends HelpingFunction  {
 					
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					driver.get("https://www.nepal-matrimony.com/profile/"+user);
 					
 					Actions action = new Actions(driver);
 					WebElement messages = GetData.Messages;
@@ -114,9 +115,10 @@ public class Messages extends HelpingFunction  {
 					js.executeScript("window.scrollBy(0,400)");
 					
 					Assert.assertTrue(GetData.ChatConversationsTitle.isDisplayed());
-					Click("Please click on View button",GetData.ViewChat);
+					
+					Click("Please click on View Chat button",GetData.ViewChat);
 					Click("Please click on Reply button",GetData.ReplyChat);
-					Input("Please Enter Text Message", GetData.RepltText, TestData.REPLY);
+					Input("Please Enter Text Message", GetData.ReplyText, TestData.REPLY);
 					Click("Please click on Send button",GetData.Send);
 					Click("Please click on Close chat icon",GetData.CloseChat);
 					Click("Please click on Hide chat icon",GetData.HideCaht);

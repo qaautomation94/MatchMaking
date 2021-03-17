@@ -48,8 +48,8 @@ public class SignUp extends HelpingFunction  {
 
 				      
 					
-				    //   email = "iftikhar.bscs@gmail.com";
-				       email = "test"+nxt+"@gmail.com";
+				       email = "erandaka.indu@gmail.com";
+				   //    email = "test"+nxt+"@gmail.com";
 
 					
 					

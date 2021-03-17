@@ -28,8 +28,8 @@ public class Chat extends HelpingFunction  {
 					Thread.sleep(15000);
 
 					Click("Please click chat button",GetData.sendmessage);
-					Thread.sleep(3000);
-					Input("Please enter Reasons and Evidence", GetData.RepltText, "test message");
+					Thread.sleep(000);
+					Input("Please enter Reasons and Evidence", GetData.ReplyText, "test message");
 					Thread.sleep(3000);
 					Click("Please click chat button",GetData.Send);
 				}

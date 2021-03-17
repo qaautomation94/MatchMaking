@@ -41,6 +41,7 @@ public class Login extends HelpingFunction  {
 					
 					Locatiors GetData=PageFactory.initElements(driver, Locatiors.class);
 					test = extent.createTest(new Exception().getStackTrace()[1].getMethodName());
+					driver.get(envirnment);
 					
 					Input("Please Enter UserName", GetData.UserName, TestData.USER);
 					Input("Please Enter Password", GetData.Password, TestData.PASS);
@@ -50,7 +51,7 @@ public class Login extends HelpingFunction  {
 //					Thread.sleep(3000);
 
 					Click("Please click login button",GetData.LoginButton);
-					Thread.sleep(15000);
+					Thread.sleep(5000);
 					String url = driver.getCurrentUrl();
 					
 					driver.get("https://www.nepal-matrimony.com/profile/"+user);
